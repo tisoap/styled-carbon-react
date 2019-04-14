@@ -1,0 +1,36 @@
+{
+  "name": "react-ibm-digital-design",
+  "version": "0.1.0",
+  "private": false,
+  "description": "IBM's Digital Design system as React components",
+  "keywords": [
+    "IBM",
+    "Northstar",
+    "component",
+    "design",
+    "digital",
+    "javascript",
+    "library",
+    "react"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tisoap/react-ibm-digital-design.git"
+  },
+  "license": "MIT",
+  "author": "Tiso Alvarez Puccinelli",
+  "files": [
+    "library",
+    "LICENSE",
+    "README.md"
+  ],
+  "main": "library/index.js",
+  "scripts": {
+    "build:docs": "docz build",
+    "docs": "docz dev"
+  },
+  "devDependencies": {
+    "docz": "1.0.0",
+    "docz-theme-default": "1.0.0"
+  }
+}
