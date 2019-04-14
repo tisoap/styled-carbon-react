@@ -2,7 +2,7 @@ module.exports = {
   env: {
     cjs: {
       plugins: [
-        '@babel/plugin-proposal-export-default-from',
+        '@babel/plugin-proposal-export-default-from'
       ],
       presets: [
         [
@@ -13,12 +13,12 @@ module.exports = {
             loose: true,
           }
         ],
-        '@babel/preset-react',
+        '@babel/preset-react'
       ]
     },
     es: {
       plugins: [
-        '@babel/plugin-proposal-export-default-from',
+        '@babel/plugin-proposal-export-default-from'
       ],
       presets: [
         [
@@ -29,7 +29,7 @@ module.exports = {
             loose: false,
           }
         ],
-        '@babel/preset-react',
+        '@babel/preset-react'
       ]
     }
   }

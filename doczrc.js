@@ -3,7 +3,7 @@ export default {
   modifyBabelRc: config => ({
     ...config,
     plugins: [
-      '@babel/plugin-proposal-export-default-from',
+      '@babel/plugin-proposal-export-default-from'
     ]
-  }),
+  })
 }

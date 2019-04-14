@@ -1,0 +1,6 @@
+# Build
+library/
+.docz/
+
+# Dependency
+node_modules/
