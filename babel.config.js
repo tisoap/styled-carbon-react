@@ -1,6 +1,4 @@
-const plugins = [
-  '@babel/plugin-proposal-export-default-from'
-]
+const plugins = []
 
 const defaultPresets = [
   '@babel/preset-env',
