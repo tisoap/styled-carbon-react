@@ -1,17 +1,18 @@
 {
-  "name": "react-ibm-digital-design",
+  "name": "styled-carbon-react",
   "version": "0.1.0",
   "private": false,
-  "description": "IBM's Digital Design system as React components",
+  "description": "IBM's Carbon Design System as standalone, styled React components.",
   "keywords": [
     "IBM",
-    "Northstar",
+    "carbon",
     "component",
     "design",
     "digital",
     "javascript",
     "library",
-    "react"
+    "react",
+    "system"
   ],
   "repository": {
     "type": "git",
@@ -36,8 +37,8 @@
     "docs": "docz dev",
     "lint": "eslint --fix ./",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "prop-types": "15.7.2",

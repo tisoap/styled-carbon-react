@@ -1,3 +1,3 @@
-## React IBM Digital Design
+## Styled Carbon React
 
-IBM's Digital Design system as React Components.
+IBM's Carbon Design System as standalone, styled React components.

@@ -1,3 +1,4 @@
 export default {
-  title: 'IBM Digital Design'
+  title: 'Styled Carbon React',
+  description: 'IBM\'s Carbon Design System as standalone, styled React components.'
 }
