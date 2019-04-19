@@ -1,27 +1,49 @@
-const plugins = []
+const defaultPlugins = [
+  ['emotion', { 'sourceMap': false }]
+]
+
+const devPlugins = [
+  ['emotion', { 'sourceMap': true }]
+]
+
+const cjsPresetEnvConfig = {
+  loose: true,
+  modules: 'commonjs',
+  targets: { esmodules: false }
+}
 
 const defaultPresets = [
-  '@babel/preset-env',
+  ['@babel/preset-env', cjsPresetEnvConfig],
   '@babel/preset-react'
 ]
 
+const esPresetEnvConfig = {
+  loose: false,
+  modules: false,
+  targets: { esmodules: true }
+}
+
 const esModulePresets = [
-  ['@babel/preset-env', { 'modules': false }],
+  ['@babel/preset-env', esPresetEnvConfig],
   '@babel/preset-react'
 ]
 
 module.exports = {
   env: {
     cjs: {
-      plugins,
+      plugins: defaultPlugins,
       presets: defaultPresets
     },
     es: {
-      plugins,
+      plugins: defaultPlugins,
       presets: esModulePresets
     },
     test: {
-      plugins,
+      plugins: defaultPlugins,
+      presets: defaultPresets
+    },
+    dev: {
+      plugins: devPlugins,
       presets: defaultPresets
     }
   }
