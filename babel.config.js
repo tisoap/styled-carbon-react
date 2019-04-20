@@ -29,6 +29,8 @@ const esModulePresets = [
 ]
 
 module.exports = {
+  plugins: defaultPlugins,
+  presets: defaultPresets,
   env: {
     cjs: {
       plugins: defaultPlugins,
