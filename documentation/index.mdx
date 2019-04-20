@@ -3,17 +3,18 @@ name: Home
 route: /
 ---
 
+import { Playground, Props } from 'docz'
 import { Button } from '../source'
 
 # Styled Carbon React
 
-Hello world!
+## Button
 
-This is a Button component:
+<Props of={Button} />
 
-<Button>Click Me</Button>
+## Basic usage
 
-
-This is a primary button:
-
-<Button primary>Click Me</Button>
+<Playground>
+  <Button>Button</Button>
+  <Button primary>Primary button</Button>
+</Playground>

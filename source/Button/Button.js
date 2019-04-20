@@ -7,14 +7,16 @@ const StyledButton = styled.button`
   font-weight: ${({ primary }) => primary ? 'bold' : 'normal'};
 `
 
-const Button = ({ children, primary }) => (
-  <StyledButton primary={primary}>
+const Button = ({ children, ...props }) => (
+  <StyledButton {...props}>
     {children}
   </StyledButton>
 )
 
 Button.propTypes = {
+  /** A child node is required for this component */
   children: PropTypes.node.isRequired,
+  /** Controls if the button is bold or not */
   primary: PropTypes.bool
 }
 
