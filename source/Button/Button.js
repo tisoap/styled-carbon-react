@@ -1,10 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from '@emotion/styled'
+import { css } from '@emotion/core'
+import baseStyle from './Button.style'
+
+const dynamicStyle = props => css`
+  margin: ${props.margin};
+`
 
 const StyledButton = styled.button`
-  color: green;
-  font-weight: ${({ primary }) => primary ? 'bold' : 'normal'};
+  ${baseStyle};
+  ${dynamicStyle};
 `
 
 const Button = ({ children, ...props }) => {
@@ -18,14 +24,12 @@ const Button = ({ children, ...props }) => {
 }
 
 Button.propTypes = {
-  /** A child node is required for this component */
-  children: PropTypes.node.isRequired,
-  /** Controls if the button is bold or not */
-  primary: PropTypes.bool
+  margin: PropTypes.string,
+  children: PropTypes.node.isRequired
 }
 
 Button.defaultProps = {
-  primary: false
+  margin: '0'
 }
 
 export default Button
