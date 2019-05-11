@@ -45,6 +45,8 @@
     "@emotion/styled": "10.0.11",
     "emotion-theming": "10.0.10",
     "lodash.merge": "4.6.1",
+    "prop-types": "15.7.2",
+    "styled-system": "4.2.2"
   },
   "devDependencies": {
     "@babel/cli": "7.4.4",
