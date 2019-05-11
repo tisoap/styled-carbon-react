@@ -44,9 +44,7 @@
     "@emotion/core": "10.0.10",
     "@emotion/styled": "10.0.11",
     "emotion-theming": "10.0.10",
-    "prop-types": "15.7.2",
-    "react": "16.8.6",
-    "react-dom": "16.8.6"
+    "prop-types": "15.7.2"
   },
   "devDependencies": {
     "@babel/cli": "7.4.4",
@@ -69,7 +67,13 @@
     "jest": "24.8.0",
     "jest-dom": "3.2.2",
     "jest-emotion": "10.0.11",
+    "react": "16.8.6",
+    "react-dom": "npm:@hot-loader/react-dom@16.8.6",
     "react-testing-library": "7.0.0",
     "rimraf": "2.6.3"
+  },
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
   }
 }
