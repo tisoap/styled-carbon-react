@@ -6,9 +6,9 @@ import DefaultTheme from './DefaultTheme'
 import Container from '../Container'
 
 const ThemeProvider = ({ theme, children, ...props }) => {
-  const newTheme = merge(DefaultTheme, theme)
+  const userTheme = merge(DefaultTheme, theme)
   return (
-    <EmotionTheming theme={newTheme}>
+    <EmotionTheming theme={userTheme}>
       <Container {...props}>
         {children}
       </Container>
@@ -22,7 +22,7 @@ ThemeProvider.propTypes = {
 }
 
 ThemeProvider.defaultProps = {
-  theme: DefaultTheme
+  theme: {}
 }
 
 export default ThemeProvider
