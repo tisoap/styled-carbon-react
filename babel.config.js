@@ -1,9 +1,11 @@
 const defaultPlugins = [
-  ['emotion', { 'sourceMap': false }]
+  ['emotion', { 'sourceMap': false }],
+  '@loadable/babel-plugin'
 ]
 
 const devPlugins = [
-  ['emotion', { 'sourceMap': true }]
+  ['emotion', { 'sourceMap': true }],
+  '@loadable/babel-plugin'
 ]
 
 const cjsPresetEnvConfig = {

@@ -41,8 +41,10 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
+    "@carbon/icons-react": "10.2.0",
     "@emotion/core": "10.0.10",
     "@emotion/styled": "10.0.11",
+    "@loadable/component": "5.10.1",
     "emotion-theming": "10.0.10",
     "lodash.merge": "4.6.1",
     "prop-types": "15.7.2",
@@ -53,6 +55,7 @@
     "@babel/core": "7.4.5",
     "@babel/preset-env": "7.4.5",
     "@babel/preset-react": "7.0.0",
+    "@loadable/babel-plugin": "5.10.0",
     "babel-eslint": "10.0.1",
     "babel-plugin-emotion": "10.0.9",
     "cross-env": "5.2.0",
