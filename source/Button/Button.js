@@ -1,16 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from '@emotion/styled'
-import { css } from '@emotion/core'
+import { space } from 'styled-system'
 import baseStyle from './Button.style'
-
-const dynamicStyle = props => css`
-  margin: ${props.margin};
-`
 
 const StyledButton = styled.button`
   ${baseStyle};
-  ${dynamicStyle};
+  ${space};
 `
 
 const Button = ({ children, ...props }) => {
@@ -24,12 +20,8 @@ const Button = ({ children, ...props }) => {
 }
 
 Button.propTypes = {
-  margin: PropTypes.string,
+  ...space.propTypes,
   children: PropTypes.node.isRequired
-}
-
-Button.defaultProps = {
-  margin: '0'
 }
 
 export default Button
