@@ -41,14 +41,14 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@carbon/icons-react": "10.2.0",
+    "@carbon/icons-react": "10.3.0",
     "@emotion/core": "10.0.10",
-    "@emotion/styled": "10.0.11",
+    "@emotion/styled": "10.0.12",
     "@loadable/component": "5.10.1",
     "emotion-theming": "10.0.10",
     "lodash.merge": "4.6.1",
     "prop-types": "15.7.2",
-    "styled-system": "4.2.2"
+    "styled-system": "5.0.10"
   },
   "devDependencies": {
     "@babel/cli": "7.4.4",
@@ -56,12 +56,13 @@
     "@babel/preset-env": "7.4.5",
     "@babel/preset-react": "7.0.0",
     "@loadable/babel-plugin": "5.10.0",
-    "babel-eslint": "10.0.1",
-    "babel-plugin-emotion": "10.0.9",
+    "@testing-library/react": "8.0.1",
+    "babel-eslint": "10.0.2",
+    "babel-plugin-emotion": "10.0.13",
     "cross-env": "5.2.0",
     "docz": "1.2.0",
     "docz-theme-default": "1.2.0",
-    "eslint": "5.16.0",
+    "eslint": "6.0.0",
     "eslint-config-standard": "12.0.0",
     "eslint-config-standard-react": "7.0.2",
     "eslint-plugin-import": "2.17.3",
@@ -70,11 +71,10 @@
     "eslint-plugin-react": "7.13.0",
     "eslint-plugin-standard": "4.0.0",
     "jest": "24.8.0",
-    "jest-dom": "3.4.0",
+    "jest-dom": "3.5.0",
     "jest-emotion": "10.0.11",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "react-testing-library": "7.0.1",
     "rimraf": "2.6.3"
   },
   "peerDependencies": {
