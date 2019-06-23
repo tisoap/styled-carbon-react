@@ -8,22 +8,47 @@ const loadFn = ({ name, size }) => import(`@carbon/icons-react/es/${name}/${size
 const options = { fallback: <LoadingIcon /> }
 const AsyncIcon = loadable(loadFn, options)
 
-const Icon = ({ name, size, ...props }) => {
+const Icon = ({
+  'aria-hidden': aria,
+  className,
+  fill,
+  height,
+  name,
+  size,
+  viewBox,
+  width
+}) => {
   if (!name || !size) return null
-  if (size === 'glyph') {
-    size = 'index'
-  }
+
+  const iconSize = (size === 'glyph')
+    ? 'index'
+    : size
 
   return (
     <IconErrorBoundary>
-      <AsyncIcon name={name} size={size} {...props} />
+      <AsyncIcon
+        aria-hidden={aria}
+        className={className}
+        fill={fill}
+        height={height}
+        name={name}
+        size={iconSize}
+        viewBox={viewBox}
+        width={width}
+      />
     </IconErrorBoundary>
   )
 }
 
 Icon.propTypes = {
+  'aria-hidden': PropTypes.bool,
+  className: PropTypes.string,
+  fill: PropTypes.string,
+  height: PropTypes.number,
   name: PropTypes.string.isRequired,
-  size: PropTypes.oneOf(['16', '20', '24', '32', 'glyph']).isRequired
+  size: PropTypes.oneOf(['16', '20', '24', '32', 'glyph']).isRequired,
+  viewBox: PropTypes.string,
+  width: PropTypes.number
 }
 
 export default Icon
