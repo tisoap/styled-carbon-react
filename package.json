@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:tisoap/react-ibm-digital-design.git"
+    "url": "git@github.com:tisoap/styled-carbon-react.git"
   },
   "license": "MIT",
   "author": "Tiso Alvarez Puccinelli",
