@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import loadable from '@loadable/component'
-import LoadingIcon from '@carbon/icons-react/es/time/32'
+import LoadingIcon from '@carbon/icons-react/lib/time/32'
 import IconErrorBoundary from './IconErrorBoundary'
 
-const loadFn = ({ name, size }) => import(`@carbon/icons-react/es/${name}/${size}`)
+const loadFn = ({ name, size }) => import(`@carbon/icons-react/lib/${name}/${size}`)
 const options = { fallback: <LoadingIcon /> }
 const AsyncIcon = loadable(loadFn, options)
 

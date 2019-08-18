@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import ErrorIcon from '@carbon/icons-react/es/error/32'
+import ErrorIcon from '@carbon/icons-react/lib/error/32'
 
 class IconErrorBoundary extends Component {
   constructor (props) {

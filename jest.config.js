@@ -1,7 +1,6 @@
 module.exports = {
   setupFilesAfterEnv: [
-    'jest-dom/extend-expect',
-    '@testing-library/react/cleanup-after-each',
+    '@testing-library/jest-dom/extend-expect',
     '<rootDir>/jest.setup.js'
   ],
   snapshotSerializers: ['jest-emotion']
